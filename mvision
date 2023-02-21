@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [[ "$1" == "install" ]]; then
+    if [[ "$2" == "grafana" ]]; then
+        cd ~
+        cd /usr/local/bin/install
+        ./add_grafana.sh
+        cd ~
+    elif [[ "$2" == "vsphere" ]]; then
+        cd ~
+        cd /usr/local/bin/install
+        ./add_vSphere.sh
+        cd ~
+    fi
+fi
